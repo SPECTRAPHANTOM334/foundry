@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.26;
+pragma solidity ^0.8.19;
 
 contract FunWithStorage {
     uint256 favoriteNumber; // Stored at slot 0
@@ -26,6 +26,6 @@ contract FunWithStorage {
     function doStuff() public {
         uint256 newVar = favoriteNumber + 1; // SLOAD
         bool otherVar = someBool; // SLOAD
-            // ^^ memory / stack variables
+        // ^^ memory / stack variables
     }
 }
